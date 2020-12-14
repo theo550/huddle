@@ -1,0 +1,340 @@
+$Pink: hsl(322, 100%, 66%);
+$LightPink: hsl(321, 100%, 78%);
+$LightRed: hsl(0, 100%, 63%);
+
+$VeryDarkCyan: hsl(192, 100%, 9%);
+$VeryPaleBlue: hsl(207, 100%, 98%);
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.container{
+  padding: 20px 20px 0 20px;
+  overflow: hidden;
+
+  .svg{
+    width: 100vw;
+  }
+  
+  
+  /*
+  HEADER
+  */
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+    .logo{
+      width: 33%;
+      max-width: 300px;
+      cursor: pointer;
+    }
+  }
+
+  .btn{
+    color: $LightPink;
+    border: 2px solid $LightPink;
+    background-color: white;
+    height: 30px;
+    width: 33%;
+    max-width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $Pink;
+      border: none;
+      color: white;
+    }
+  }
+/*--------------------------------------*/
+
+  /*
+  MAIN
+  */
+
+  h1{
+    font-weight: 700;
+  }
+  p{
+    font-weight: 400;
+  }
+  
+  section{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .svg-mobile{
+      display: block;
+    }
+    .svg-desktop{
+      display: none;
+    }
+    .title{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      h1{
+        margin-bottom: 40px;
+        font-size: 2.5em;
+      }
+      p{
+        margin-bottom: 40px;
+        max-width: 550px;
+      }
+      .btn{
+        margin-bottom: 40px;
+        width: 70%;
+        border: none;
+        background-color: $Pink;
+        color: white;
+        height: 40px;
+
+        &:hover{
+          background-color: $LightPink;
+        }
+      }
+      .screen-mockups{
+        width: 85%;
+      }
+    }
+
+    .card{
+      margin-top: 60px;
+      margin-bottom: 100px;
+      img{
+        width: 30px;
+      }
+      h1{
+        font-size: 3em;
+      }
+      p{
+        text-align: center;
+        font-size: .7em;
+        color: black;
+        opacity: .3;
+      }
+    }
+  }
+
+  .white{
+    background-color: white;
+  }
+
+  .blue{
+    background-color: $VeryPaleBlue;
+  }
+
+  .content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    .text{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .growth{
+      width: 80%;
+      margin: 50px 0;
+    }
+    h1{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p{
+      text-align: center;
+      width: 85%;
+      margin-bottom: 50px;
+      width: 80%;
+    }
+  }
+
+
+  .last-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    h1{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .btn{
+      border: none;
+      background-color: $Pink;
+      color: white;
+      width: 70%;
+      &:hover{
+        background-color: $LightPink;
+      }
+    }
+  }
+}
+
+  /*--------------------------------------*/
+
+  /*
+  FOOTER
+  */
+
+  .svg-bottom{
+    width: 100vw;
+    margin-bottom: -20px;
+  }
+  .svg-mobile{
+    display: block;
+  }
+  .svg-desktop{
+    display: none;
+  }
+  
+  footer{
+    background-color: $VeryDarkCyan;
+    color: white;
+    padding: 0 20px 20px 20px;
+    .first{
+      h2{
+        font-weight: 600;
+        padding: 30px 0;
+      }
+      p{
+        font-weight: 400;
+      }
+      .input{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        input{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          height: 40px;
+          width: 100%;
+          border-radius: 10px;
+          max-width: 500px;
+        }
+        .btn{
+          width: 50%;
+          background-color: $Pink;
+          height: 40px;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          margin-bottom: 60px;
+          max-width: 300px;
+          cursor: pointer;
+          &:hover{
+            background-color: $LightPink;
+          }
+        }
+      }
+    }
+    .last{
+      .phone, .email{
+        display: flex;
+        margin-top: 20px;
+        img{
+          margin-right: 10px;
+        }
+      }
+    }
+    .networks{
+      margin-top: 40px;
+      i{
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /*--------------------------------------*/
+
+@media screen and (min-width: 800px){
+  .container{
+    section{
+      .cards{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+      }
+      .svg-mobile{
+        display: none;
+      }
+      .svg-desktop{
+        display: block;
+      }
+      .blue{
+        flex-direction: row-reverse;
+        width: 100vw;
+        .growth{
+          width: 40%;
+          margin-right: 10%;
+        }
+        .text{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 30px;
+          width: 40%;
+          p{
+            text-align: left;
+          }
+        } 
+      }
+      .white{
+        flex-direction: row;
+        width: 100vw;
+        .growth{
+          width: 40%;
+          margin-left: 10%;
+        }
+        .text{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 60px;
+          width: 40%;
+          p{
+            text-align: left;
+          }
+        } 
+      }
+    }
+    .svg-mobile{
+      display: none;
+    }
+    .svg-desktop{
+      display: block;
+    }
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    .first{
+      width: 30%;
+    }
+    .last{
+      width: 30%;
+      margin-top: 50px
+    }
+    .input{
+      display: flex;
+    }
+  }
+}
